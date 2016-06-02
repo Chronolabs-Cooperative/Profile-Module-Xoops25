@@ -1,0 +1,10 @@
+<h2><{$directory.title}></h2>
+<p><{$directory.description}></p>
+<ul>
+<{foreach item=group from=$directory.groups}>
+	<li style="font-size:15px;"><a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/directory.php?groupid=<{$group.id}>"><{$group.title}></a></li>
+<{/foreach}>
+</ul>
+<hr />
+<{include file="db:profile_directory_search.html"}>
+<{include file="db:profile_directory_catlist.html"}>

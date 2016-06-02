@@ -1,0 +1,18 @@
+<h2><{$directory.title}></h2>
+<p><{$directory.description}></p>
+<hr />
+<{assign var="col" value="1"}>
+<table width="100%">
+<tr class="head">
+<{foreach item=item from=$directory.fieldtitle}>
+	<td><{$item}></td>
+<{/foreach}>
+</tr>
+<{foreach item=item from=$directory.items}>
+<tr class="<{$item.class}>">
+	<{foreach item=field from=$item.fields}>
+    <td><{if $item.link}><a href="<{$item.link}>"><{/if}><{if $field.image}><img src="<{$field.image}>"><{else}><{$field.text}><{/if}><{if $item.link}></a><{/if}></td>
+    <{/foreach}>
+</tr>
+<{/foreach}>
+</table>

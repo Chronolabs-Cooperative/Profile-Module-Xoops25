@@ -1,0 +1,19 @@
+<{includeq file="db:profile_breadcrumbs.html"}>
+<h1><{$smarty.const._PROFILE_MA_NOTLOCAL_H1}></h1>
+<p><{$smarty.const._PROFILE_MA_NOTLOCAL_P}></p>
+<h2><{$smarty.const._PROFILE_MA_IPDETAILS_H2}> - <{$ip}></h2>
+<{foreach item=item key=key from=$location}>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$key}>:&nbsp;<{$item}></p>
+<{/foreach}>
+<{if $countrycodes}>
+<h2><{$smarty.const._PROFILE_MA_PERMITTED_COUNTRYCODES_H2}></h2>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(10,25,198);"><{foreach item=item key=key from=$countrycodes}>&nbsp;<{$item}><{if $key < sizeof($countrycodes)-1}>,<{/if}><{/foreach}></p>
+<{/if}>
+<{if $districts}>
+<h2><{$smarty.const._PROFILE_MA_PERMITTED_DISTRICTS_H2}></h2>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(10,25,198);"><{foreach item=item key=key from=$districts}>&nbsp;<{$item}><{if $key < sizeof($districts)-1}>,<{/if}><{/foreach}></p>
+<{/if}>
+<{if $citys}>
+<h2><{$smarty.const._PROFILE_MA_PERMITTED_CITIES_H2}></h2>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(10,25,198);"><{foreach item=item key=key from=$citys}>&nbsp;<{$item}><{if $key < sizeof($citys)-1}>,<{/if}><{/foreach}></p>
+<{/if}>

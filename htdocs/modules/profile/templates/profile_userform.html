@@ -1,0 +1,59 @@
+<fieldset style="padding: 10px;">
+  <legend style="font-weight: bold;"><{$lang_login}></legend>
+  <form action="<{$xoops_url}>/modules/<{$xoops_dirname}>/user.php" method="post">
+    <{$lang_username}> <input type="text" name="uname" size="26" maxlength="25" value="<{$usercookie}>" /><br /><br />
+    <{$lang_password}> <input type="password" name="pass" size="21" maxlength="32" /><br /><br />
+    <{if isset($lang_rememberme)}>
+        <input type="checkbox" name="rememberme" value="On" checked /> <{$lang_rememberme}><br /><br />
+    <{/if}>
+    
+    <input type="hidden" name="op" value="login" />
+    <input type="hidden" name="xoops_redirect" value="<{$redirect_page}>" />
+    <input type="submit" value="<{$lang_login}>" />
+  </form>
+  <br />
+  <a name="lost"></a>
+  <div><{$lang_notregister}><br /></div>
+</fieldset>
+
+<br />
+<{if $social.display eq true}>
+<p align="left" style="font-size:1.23em; font-weight:bold;"><{$smarty.const._PROFILE_MA_ALL_SIGNIN}></p>
+<center>
+	<table width="75%" align="center">
+		<tr>
+			<{if $social.twitter eq true}>
+			<td>
+				<form id="twitter_connect_form" action="<{$xoops_url}>/modules/profile/callback/twitter/" method="get">
+				      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/sign-in-with-twitter-small.png" BORDER="0" ALT="SUBMIT!" />
+				</form>
+			</td>
+			<{/if}>
+			<{if $social.facebook eq true}>
+			<td>
+				<form id="facebook_connect_form" action="<{$xoops_url}>/modules/profile/callback/facebook/" method="get">
+				      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/facebook.jpg" BORDER="0" ALT="SUBMIT!" />
+				</form>
+			</td>
+			<{/if}>
+			<{if $social.linkedin eq true}>
+			<td>
+				<form id="linkedin_connect_form" action="<{$xoops_url}>/modules/profile/callback/linkedin/" method="get">
+				      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/linkedin-small.png" BORDER="0" ALT="SUBMIT!" />
+				</form>
+			</td>
+			<{/if}>
+		</tr>
+	</table>
+</center>
+<br/>
+<{/if}>
+
+
+<fieldset style="padding: 10px;">
+  <legend style="font-weight: bold;"><{$lang_lostpassword}></legend>
+  <div><br /><{$lang_noproblem}></div>
+  <form action="<{$xoops_url}>/modules/<{$xoops_dirname}>/lostpass.php" method="post">
+    <{$lang_youremail}> <input type="text" name="email" size="26" maxlength="60" />&nbsp;&nbsp;<input type="hidden" name="op" value="mailpasswd" /><input type="hidden" name="t" value="<{$mailpasswd_token}>" /><input type="submit" value="<{$lang_sendpassword}>" />
+  </form>
+</fieldset>

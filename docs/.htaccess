@@ -1,0 +1,18 @@
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^user.php?op=(.*?)				 																			modules/profile/user.php?op=$1 		 					[L,NC,QSA]
+RewriteRule ^user/register.php				 																			modules/profile/register.php 		 					[L,NC,QSA]
+RewriteRule ^user/(.*?)/(.*?)/([0-9]+).html 																			modules/profile/userinfo.php?uid=$3  					[L,NC,QSA]
+RewriteRule ^user/(.*?)/(.*?)/comment_(.*?).php 																		modules/profile/comment_$3.php  						[L,NC,QSA]
+RewriteRule ^user/changemail.html 																						modules/profile/changemail.php  						[L,NC,QSA]
+RewriteRule ^user/changepassword.html 																					modules/profile/changepass.php  						[L,NC,QSA]
+RewriteRule ^user/directory,(.*?),(.*?),([0-9]+).html 																	modules/profile/directory.php?op=$1&fct=$2&groupid=$3  	[L,NC,QSA]
+RewriteRule ^user/edit,(.*?).html 																						modules/profile/edituser.php?op=$1  					[L,NC,QSA]
+RewriteRule ^user/lostpassword,(.*?),(.*?).html 																		modules/profile/lostpass.php?email=$1&code=$2  			[L,NC,QSA]
+RewriteRule ^user/register,(.*?),(.*?),(.*?).html 																		modules/profile/register.php?op=$1&uid=$2&step=$3  		[L,NC,QSA]
+RewriteRule ^user/search,(.*?).html 																					modules/profile/search.php?op=$1  						[L,NC,QSA]
+RewriteRule ^user/control,([a-zA-Z0-9]+).html 																			modules/profile/user.php?op=$1  						[L,NC,QSA]

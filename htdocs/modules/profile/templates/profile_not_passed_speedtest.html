@@ -1,0 +1,23 @@
+<{includeq file="db:profile_breadcrumbs.html"}>
+<h1><{$smarty.const._PROFILE_MA_NOTSPEEDY_H1}></h1>
+<p><{$smarty.const._PROFILE_MA_NOTSPEEDY_P}></p>
+<{if not $downlink_diff eq 0}>
+<h2><{$smarty.const._PROFILE_MA_DOWNLINK_H2}> - <{if $downlink_passes}><{$smarty.const._PROFILE_MA_PASS_H2}><{else}><{$smarty.const._PROFILE_MA_FAIL_H2}><{/if}></h2>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_DOWNLINK_TESTED_P}>:&nbsp;<{$downlink_tested}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_DOWNLINK_REQUIRED_P}>:&nbsp;<{$downlink_required}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<{if $downlink_passes}>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_DOWNLINK_BEATBY_P}>:&nbsp;<{$downlink_diff}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<{else}>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_DOWNLINK_NEEDSMORE_P}>:&nbsp;<{$downlink_diff}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<{/if}>
+<{/if}>
+<{if not $uplink_diff eq 0}>
+<h2><{$smarty.const._PROFILE_MA_UPLINK_H2}> - <{if $uplink_passes}><{$smarty.const._PROFILE_MA_PASS_H2}><{else}><{$smarty.const._PROFILE_MA_FAIL_H2}><{/if}></h2>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_UPLINK_TESTED_P}>:&nbsp;<{$uplink_tested}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_UPLINK_REQUIRED_P}>:&nbsp;<{$uplink_required}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<{if $uplink_passes}>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_UPLINK_BEATBY_P}>:&nbsp;<{$uplink_diff}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<{else}>
+<p align="center" style="font-size:1.24em; margin-top:15px; margin-bottom:5px; color:rgb(0,0,198);"><{$smarty.const._PROFILE_MA_UPLINK_NEEDSMORE_P}>:&nbsp;<{$uplink_diff}>&nbsp;<{$smarty.const._PROFILE_MA_SPEED_MBPS}></p>
+<{/if}>
+<{/if}>

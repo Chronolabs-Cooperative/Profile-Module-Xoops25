@@ -1,0 +1,30 @@
+<{if $block.display eq true}>
+<p align="center" style="font-size:1.23em; font-weight:bold;"><{$smarty.const._BLCK_PROFILE_ALL_SIGNIN}></p>
+<center>
+	<table>
+		<tr>
+			<{if $block.twitter eq true}>
+			<td>
+				<form id="twitter_connect_form" action="<{$xoops_url}>/modules/profile/callback/twitter/" method="get">
+				      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/sign-in-with-twitter-small.png" BORDER="0" ALT="SUBMIT!" />
+				</form>
+			</td>
+			<{/if}>
+			<{if $block.facebook eq true}>
+			<td>
+				<form id="facebook_connect_form" action="<{$xoops_url}>/modules/profile/callback/facebook/" method="get">
+				      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/facebook.jpg" BORDER="0" ALT="SUBMIT!" />
+				</form>
+			</td>
+			<{/if}>
+			<{if $block.linkedin eq true}>
+			<td>
+				<form id="linkedin_connect_form" action="<{$xoops_url}>/modules/profile/callback/linkedin/" method="get">
+				      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/linkedin-small.png" BORDER="0" ALT="SUBMIT!" />
+				</form>
+			</td>
+			<{/if}>
+		</tr>
+	</table>
+</center>
+<{/if}>

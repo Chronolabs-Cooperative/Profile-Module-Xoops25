@@ -1,0 +1,9 @@
+<{if $block.display eq true}>
+<p align="center" style="font-size:1.23em; font-weight:bold;"><{$smarty.const._BLCK_PROFILE_LINKEDIN_SIGNIN}></p>
+<center>
+	<form id="linkedin_connect_form" action="<{$xoops_url}>/modules/profile/callback/linkedin/" method="get">
+	      <input type="hidden" name="lType" id="lType" value="initiate" />
+	      <input TYPE="image" SRC="<{$xoops_url}>/modules/profile/images/linkedin-small.png" BORDER="0" ALT="SUBMIT!" />
+	</form>
+</center>
+<{/if}>

@@ -1,0 +1,185 @@
+========================================
+ 2012/06/06 17:34:00 Version 1.78 STABLE
+========================================
+ - Changed /user.php - Support for social networks added  (Wishcraft)
+ - Changed /deactivate.php - Changed Deactivation Method to support not hacked kernel  (Wishcraft)
+ - Changed /english/modinfo.php - Changed To core Languages, new defines added  (Wishcraft)
+ - Changed /english/main.php - Changed To core Languages, new defines added  (Wishcraft)
+ - Changed /include/functions.php - New generalised functions added  (Wishcraft)
+ - Changed /include/forms.php - New email gathering form  (Wishcraft)
+ - Changed /include/update.php - Upgrade script with new tables added  (Wishcraft)
+ - Changed /preloads/core.php - Changed To supply oauth services header  (Wishcraft)
+ - Changed /sql/mysql.sql - New tables added to support oauth & oauth server  (Wishcraft)
+ - Changed /template/profile_userform.html - Social network options Added. (Wishcraft)
+ - Added /language/english/mail_templates/deactivate.tpl - Deactivation Email  (Wishcraft)
+ - Added /blocks/all_signin.php - Block with all social networks showing (Wishcraft)
+ - Added /blocks/facebook_signin.php - Block with signup through facebook.com (Wishcraft)
+ - Added /blocks/linkedin_signin.php - Block with signup through linkedin.com (Wishcraft)
+ - Added /blocks/twitter_signin.php - Block with signup through twitter.com (Wishcraft)
+ - Added /callback/facebook/index.php - Callback script for facebook.com (Wishcraft)
+ - Added /callback/linkedin/index.php - Callback script for linkedin.com (Wishcraft)
+ - Added /callback/twitter/index.php - Callback script for twitter.com (Wishcraft)
+ - Added /class/oauth.php - Class for oAuth authentication for social networks (Wishcraft)
+ - Added /images/facebook.jpg - Small logo for facebook.com (Wishcraft)
+ - Added /images/linkedin-small.png - Small logo for linkedin.com (Wishcraft)
+ - Added /images/sign-in-with-twitter-small.png - Small logo for twitter.com (Wishcraft)
+ - Added /include/oauth/... - oAuth library for system of authentication (Wishcraft)
+ - Added /include/oauth.php - oAuth library for system of authentication (Wishcraft)
+ - Added /include/linkedin.php - oAuth functions for linkedin.com API (Wishcraft)
+ - Added /english/blocks.php - Language for Blocks (Wishcraft)
+ - Added /english/emails.php - Language for Emails (Wishcraft)
+ - Added /oauth/access_token/index.php - Wrapper for oAuth Application mounting through XOOPS (Wishcraft)
+ - Added /oauth/request_token/index.php - Wrapper for oAuth Application mounting through XOOPS (Wishcraft)
+ - Added /oauth/authorize/index.php - Wrapper for oAuth Application mounting through XOOPS (Wishcraft)
+ - Added /oauth/server.php - oAuth Server for oauth mounting through XOOPS (future feature) (Wishcraft)
+ - Added /preloads/email.php - User has email address checking preloader (Wishcraft)
+ - Added /services/index.php - XRDS discovery for OAuth. Services Document Standard. (Wishcraft)
+ - Added /template/blocks/profile_all_block_signin.html - Block Template Added. (Wishcraft)
+ - Added /template/blocks/profile_facebook_block_signin.html - Block Template Added. (Wishcraft)
+ - Added /template/blocks/profile_linkedin_block_signin.html - Block Template Added. (Wishcraft)
+ - Added /template/blocks/profile_twitter_block_signin.html - Block Template Added. (Wishcraft)
+
+========================================
+ 2012/06/05 03:32:00 Version 1.77 STABLE
+========================================
+ - Changed /register.php - Country Code Bug - Typo Fixed 'CountryCodes' dropped 's'  (Wishcraft)
+ - Changed /deactivate.php - Changed Deactivation Method to support not hacked kernel  (Wishcraft)
+ - Added /language/english/mail_templates/deactivate.tpl - Deactivation Email  (Wishcraft)
+ 
+========================================
+ 2012/04/19 16:45:00 Version 1.76 STABLE
+========================================
+ - Changed /docs/.htaccess - SEO HTAccess changed to reflect proper SEO  (Wishcraft)
+ - Changed /templates/profile_admin_categorylist.html - Add DIV Removed for XOOPS 2.5 GUI Button  (Wishcraft)
+ - Changed /templates/profile_admin_fieldlist.html - Add DIV Removed for XOOPS 2.5 GUI Button  (Wishcraft)
+ - Changed /templates/profile_admin_steplist.html - Add DIV Removed for XOOPS 2.5 GUI Button  (Wishcraft)
+ - Changed /admin/category.php - Button Added for XOOPS 2.5 GUI Button  (Wishcraft)
+ - Changed /admin/fields.php - Button Added for XOOPS 2.5 GUI Button  (Wishcraft)
+ - Changed /admin/steps.php - Button Added for XOOPS 2.5 GUI Button  (Wishcraft)
+ - Changed /user.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /userinfo.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ 
+========================================
+ 2011/12/05 5:39:00 Version 1.74 STABLE
+========================================
+ - Changed /header.php - Update to reflect xoops.org  (Wishcraft)
+ - Changed /language/english/admin.php - Removed Language Constant Causing Warning (Wishcraft)
+ - Changed /language/english/main.php - Renamed Language Constant Causing Warning (Wishcraft)
+ - Changed /language/english/modinfo.php - Removed Language Constant Causing Warning  (Wishcraft)
+ - Changed /templates/profile_userinfo.html - Form path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /templates/profile_userform.html - Form path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /templates/profile_register.html - Form path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /templates/profile_directory_index.html - Form path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /edituser.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /lostpass.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /register.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /search.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /user.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /userinfo.php - Redirection path changed to fix 404 error when SEO  (Wishcraft)
+ - Changed /dojsonvalidate.php - header.php loaded instead of mainfile.php (Wishcraft)
+ - Added /register.php - Redirection for deactivation of account  (Wishcraft)
+ - Added /dojsonvalidate.php - JSON Mimetype document type set on context of header (Wishcraft)
+
+========================================
+ 2011/11/09 23:45:00 Version 1.73 STABLE
+========================================
+ - Changed $pathImageAdmin renamed to $GLOBALS['profileImageAdmin']  (Wishcraft)
+ - Changed $pathImageIcon renamed to $GLOBALS['profileImageIcon']  (Wishcraft)
+ - Changed $GLOBALS['xoopsModule'] in module renamed to $GLOBALS['profileModule'] (Wishcraft)
+ - Changed $GLOBALS['xoopsModuleConfig'] in module renamed to $GLOBALS['profileModuleConfig'] (Wishcraft)
+ - Changed XOOPS 2.5.x Admin GUI  (Wishcraft)
+ - Changed XOOPS 2.5.x Admin GUI Language Constants for Statistics language/english/admin.php  (Wishcraft)
+ - Added .htaccess SEO Redirection docs/htaccess. (Wishcraft)
+ - Added dashboard for control panel PHP files admin/dashboard.php (Wishcraft)
+ - Added about for control panel PHP files admin/about.php (Wishcraft)
+ - Added profile_adminMenu() - Changed to include addNavigation from XOOPS 2.5 Admin GUI  (Wishcraft)
+ - Added profile_footer_adminMenu() - Changed to include addNavigation from XOOPS 2.5 Admin GUI  (Wishcraft)
+ - Moved templates/style.css to language/english/style.php (GUI) (Support for Right to left Languages)  (Wishcraft)
+ 
+ Version 1.65
+-------------------
+Added:
+- /comment_delete.php - Comment Delete Hook
+- /comment_edit.php - Comment Edit Hook
+- /comment_new.php - Comment New Hook
+- /comment_post.php - Comment Post Hook
+- /comment_reply.php - Comment Reply Hook
+- /dojsonvalidate.php - JSON Hook
+- /js/jquery.json.validation.js - JSON Hook
+- /include/JSON.php - JSON Pear Library for String Encoding
+- /admin/validation.php - Administration for Validation rules
+- /class/validation.php - Class for Validation rules
+
+Changed:
+- /admin/field.php - Support for adding Validation [Lines: 76-77, 173, 195-200]
+- /class/field.php - Support for adding Validation [Lines: 115-139, 273-283, 385-387, 501-504] 
+- /include/forms.php - Support for adding Validation [Lines: 80-81, 166-189]
+
+Version 1.58
+-------------------
+- Missing constructors in some classes (could be a problem for php4 users)
+
+Version 1.57
+-------------------
+- Fixed Field weight: > 9 incorrect display 
+
+Version 1.56
+-------------------
+- Improved preloads for reducing queries
+- Removing cache from profile pages 
+
+Version 1.55
+-------------------
+- Fixed blank page in userinfo.php (trabis, colossus)
+- Fixed registration emails going everywhere (trabis, GreenFlatDog)
+- Fixed activation vulnerability (trabis, mboyden)
+
+Version 1.54
+-------------------
+???
+
+Version 1.53
+-------------------
+- Fixed bug in search, some required fields (uid, uname, etc) were not allways present in queries (trabis)
+- Fixed fields order in search.php (trabis)
+- Fixed Bug in registration Steps (trabis)
+- Added page title on userinfo.php for SEO (trabis)
+
+Version 1.52
+-------------------
+- Fixed Bug sorted Categories (dhcst/trabis)
+- Fixed bug visible all profilefields for guests (dhcst)
+- Added count User for search (dhcst)
+- Added search for groups (only webmasters) (dhcst)
+
+Version 1.51
+----------------
+???
+
+Profile version 1.50
+August 15th, 2008
+=============================
+- Made compatible with XOOPS 2.30 (phppp)
+- Made PHP4/PHP5 compliant (phppp/marco)
+- Fixed many bugs (phppp/mboyden/marco)
+- Added templates (phppp)
+- Added breadcrumbs (phppp)
+- Improved installation, mainly for localization and completeness (phppp)
+- Added CAPTCHA to register (phppp)
+- Added upgrade scripts (phppp)
+
+
+Version 1.0
+- Removed the "Allow to view account" feature as it only caused problems for anonymous
+- Register.php now requires a registration step in the database or it will redirect to the front page
+- Removed avatar preferences as they were duplicates of core
+
+Version 0.2
+
+- Modified to allow the core to be independent of this module
+- Changed visibility management to allow for more granular permissions on profiles
+
+Version 0.1 (2005)
+
+- Developed for XOOPS 2.2 to replace core user management
+ 
